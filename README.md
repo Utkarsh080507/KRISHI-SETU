@@ -1,51 +1,59 @@
-# Number Guessing Game
+# Krishi Setu
 
-A simple command-line number guessing game written in Python.
-
-## Description
-
-The program randomly selects a number between 1 and 500. The player keeps guessing until the correct number is found.
+Krishi Setu is a responsive agri-tech marketplace prototype that connects farmers and FPOs with buyers and logistics partners.
 
 ## Features
 
-- Random secret number
-- Range of 1 to 500
-- "Too low" and "Too high" hints
-- Guess counter
-- Input validation
-- Option to play multiple rounds
+- Farmer and FPO crop listings
+- Buyer marketplace and offer system
+- Live mandi price display
+- Logistics job booking and status tracking
+- Wallet, transaction history, and payment interfaces
+- Farmer, buyer, and logistics profiles
+- Crop photo previews and profile ratings
+- Live weather information based on location
+- English and Hindi language support
+- Official administration portal
+- Excel export support
+- Responsive mobile and desktop layouts
 
-## Requirements
+## Project File
 
-- Python 3
-- No external packages
+The complete application is contained in:
+
+```text
+56_abv_1.html
+```
 
 ## How to Run
 
-Open a terminal in the project folder and run:
+No build step or installation is required.
+
+1. Open `56_abv_1.html` in a modern web browser.
+2. Sign in or register through the application interface.
+3. Select the role you want to use: Farmer/FPO, Buyer, or Logistics.
+
+From PowerShell, the file can also be opened with:
 
 ```powershell
-python number_guessing_game.py
+Start-Process ".\56_abv_1.html"
 ```
 
-## How to Play
+## Technologies
 
-1. Enter a whole number between 1 and 500.
-2. Follow the hint displayed after each guess.
-3. Continue until the correct number is guessed.
-4. Choose whether to play again.
+- HTML5
+- CSS3
+- JavaScript
+- Browser `localStorage`
+- SheetJS / XLSX
+- OpenWeather data when location access and API configuration are available
 
-## Example
+## Data Storage
 
-```text
-Number Guessing Game
+The prototype stores user, listing, offer, transaction, and wallet data in the browser's `localStorage`. Clearing browser site data resets the application data.
 
-I'm thinking of a number from 1 to 500.
-Your guess: 250
-Too low! Try again.
-Your guess: 375
-Too high! Try again.
-You got it in 2 guesses!
-Play again? (y/n): n
-Thanks for playing!
-```
+## Notes
+
+- Authentication and payment screens are demonstrations and should not be treated as production payment or identity services.
+- Demo OTP and official portal flows may display generated OTP values as notifications.
+- An internet connection is recommended for fonts, the XLSX library, maps or geocoding services, and live weather data.
